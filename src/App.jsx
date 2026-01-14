@@ -1,11 +1,15 @@
-import './App.css'
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Home from "./pages/home";
 
 function App() {
   return (
-    <>
-      <h1>Hello world </h1>
-    </>
-  )
+    <div className="App">
+      <Header />
+      <Home />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
