@@ -15,7 +15,7 @@ const Home = () => {
                     <p className="text-4xl mb-2">
                         Hello I'm{" "}
                         <span className="text-green-500 font-semibold">
-                            Vicky Raj{" "}
+                            Vicky Raj
                         </span>
                     </p>
 
