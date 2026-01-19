@@ -522,19 +522,14 @@ shadow-md shadow-black/50 overflow-hidden "
                 </div>
             </div>
             <div>
-                  <div className="w-full flex justify-center mb-6">
+                <div className="w-full flex justify-center mb-6">
                     <h2 className="text-3xl sm:text-5xl border-b border-black dark:border-white px-2 text-green-400 font-bold mb-6">
                         Contact us
-                
                     </h2>
                 </div>
                 <div>
-                    <h1>
-                        Get in Touch
-                    </h1>
-                    <p>
-
-                    </p>
+                    <h1>Get in Touch</h1>
+                    <p></p>
                 </div>
             </div>
         </div>
