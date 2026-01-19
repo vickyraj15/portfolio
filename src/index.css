@@ -2,58 +2,113 @@
 
 /* Custom utility for animation */
 @layer utilities {
-  .animate-marquee {
-    animation: marquee 60s linear infinite;
-  }
+    .animate-marquee {
+        animation: marquee 60s linear infinite;
+    }
 }
 
 /* Keyframes */
 @keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* right side image styling */
 
 @layer utilities {
-  /* Slow spin */
-  .animate-spin-slow {
-    animation: spin 14s linear infinite;
-  }
+    /* Slow spin */
+    .animate-spin-slow {
+        animation: spin 14s linear infinite;
+    }
 
-  /* Floating image */
-  .animate-float {
-    animation: float 4s ease-in-out infinite;
-  }
+    /* Floating image */
+    .animate-float {
+        animation: float 4s ease-in-out infinite;
+    }
 
-  /* Soft glow pulse */
-  .animate-glow {
-    animation: glow 3s ease-in-out infinite;
-  }
+    /* Soft glow pulse */
+    .animate-glow {
+        animation: glow 3s ease-in-out infinite;
+    }
 }
 
 /* Keyframes */
 @keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
 }
 
 @keyframes glow {
-  0%,
-  100% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.5;
-  }
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.5;
+    }
 }
 /* card SECTION ANIMATION */
+
+/* Contact Form CSS Example */
+/* body style (customize as needed) */
+/* body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+} */
+
+/* form style */
+#contact-form {
+    width: 100%;
+    min-width: 260;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    border: #dadada 1px solid;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #002041;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+/* input and textarea style */
+#contact-form > input,
+#contact-form > textarea {
+    width: 100%;
+    min-width: calc(260 - 20px);
+    max-width: calc(500px - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* button style */
+#contact-form > button {
+    width: 100px;
+    padding: 10px;
+    background-color: #002041;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: #003957;
+    }
+}

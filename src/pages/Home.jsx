@@ -1,8 +1,9 @@
 import React from "react";
+import ContactForm from "../components/ContactForm";
 
 const Home = () => {
     return (
-        <div className="w-full min-h-screen bg-blue-950 text-white flex flex-col items-center px-10 py-20">
+        <div className="w-full min-h-screen flex flex-col items-center px-10 py-20">
             <button
                 className="fixed left-2 top-3/4 -translate-y-1/2 bg-green-500 text-black  px-3 pt-2 pb-5
           rounded-full rounded-tr-full rotate-90 origin-left cursor-pointer hover:bg-purple-600 z-50 font-semibold"
@@ -527,10 +528,7 @@ shadow-md shadow-black/50 overflow-hidden "
                         Contact us
                     </h2>
                 </div>
-                <div>
-                    <h1>Get in Touch</h1>
-                    <p></p>
-                </div>
+                <ContactForm />
             </div>
         </div>
     );
