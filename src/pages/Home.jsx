@@ -1,58 +1,544 @@
 import React from "react";
 
 const Home = () => {
-  return (
-    <div className="w-full min-h-screen bg-indigo-800 text-white flex flex-col items-center px-10 py-20">
-      <button
-        className="fixed left-2 top-3/4 -translate-y-1/2 bg-green-500 text-black  px-3 pt-2 pb-5
+    return (
+        <div className="w-full min-h-screen bg-blue-950 text-white flex flex-col items-center px-10 py-20">
+            <button
+                className="fixed left-2 top-3/4 -translate-y-1/2 bg-green-500 text-black  px-3 pt-2 pb-5
           rounded-full rounded-tr-full rotate-90 origin-left cursor-pointer hover:bg-purple-600 z-50 font-semibold"
-      >
-        Download Resume
-      </button>
-      <div className="w-full flex justify-around">
-        {/* LEFT SIDE TEXT */}
-        <div className="flex flex-col justify-center gap-0">
-          <p className="text-4xl mb-2">
-            Hello I'm{" "}
-            <span className="text-green-500 font-semibold">Vicky Raj </span>
-          </p>
+            >
+                Download Resume
+            </button>
+            <div className="w-full flex justify-around">
+                {/* LEFT SIDE TEXT */}
+                <div className="flex flex-col justify-center gap-0">
+                    <p className="text-4xl mb-2">
+                        Hello I'm{" "}
+                        <span className="text-green-500 font-semibold">
+                            Vicky Raj{" "}
+                        </span>
+                    </p>
 
-          <h1 className="text-5xl md:text-6xl font-extrabold leading-12">
-            Web Developer
-          </h1>
-          <h1 className="text-5xl md:text-6xl font-extrabold leading-12">
-            MERN Stack
-          </h1>
-          <h1 className="text-5xl md:text-6xl font-extrabold leading-12">
-            DSA with Java & C++
-          </h1>
+                    <h1 className="text-5xl md:text-6xl font-extrabold leading-12">
+                        Web Developer
+                    </h1>
+                    <h1 className="text-5xl md:text-6xl font-extrabold leading-12">
+                        MERN Stack
+                    </h1>
+                    <h1 className="text-5xl md:text-6xl font-extrabold leading-12">
+                        DSA with Java & C++
+                    </h1>
 
-          <p className="text-gray-300 mt-4 max-w-lg">
-            Forging digital bridges, one line of code at a time, to empower all
-            in the online realm.
-          </p>
+                    <p className="text-gray-300 mt-4 max-w-lg">
+                        Forging digital bridges, one line of code at a time, to
+                        empower all in the online realm.
+                    </p>
+                </div>
+                {/* RIGHT SIDE IMAGE */}
+                <div className="flex justify-center items-center relative">
+                    {/* Outer rotating ring */}
+                    <div
+                        className="absolute w-[220px] h-[220px] rounded-full
+    border-4 border-transparent border-t-white border-r-white
+    opacity-40 animate-spin-slow"
+                    ></div>
+
+                    {/* Middle pulse ring */}
+                    <div
+                        className="absolute w-[280px] h-[280px] rounded-full
+    border-2 border-white opacity-10 animate-pulse"
+                    ></div>
+
+                    {/* Glow ring */}
+                    <div
+                        className="absolute w-240px h-240px rounded-full
+    blur-2xl bg-white/10 animate-glow"
+                    ></div>
+
+                    {/* Profile Image with floating animation */}
+                    <img
+                        src="/vicky.jpeg"
+                        alt="profile"
+                        className="w-[200px] h-[200px] object-cover rounded-full
+    relative z-10 animate-float shadow-xl"
+                    />
+                </div>
+            </div>
+
+            <div className="w-full overflow-hidden mt-10 py-3 px-2 font-bold whitespace-nowrap">
+                <h2 className="uppercase inline-block animate-marquee text-[6vw] sm:text-[8vw]">
+                    developer | MERN Stack specialist | Java | C++ | C | DSA |
+                    developer | MERN Stack specialist | Java | C++ | C | DSA |
+                    developer | MERN Stack specialist | Java | C++ | C | DSA |
+                </h2>
+            </div>
+            {/*card section*/}
+            <div className="score-fm w-full h-fit flex flex-wrap justify-evenly py-4 sm:py-5 md:py-6 px-6 md:px-12">
+                <div className="relative overflow-hidden size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
+                    <b className="hover:text-[4vw]">24+</b>
+                    <h1 className="uppercase text-base sm:text-lg md:text-xl">
+                        succesfully completed project
+                    </h1>
+                </div>
+                <div className="relative overflow-hidden size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
+                    <b className="hover:text-[4vw]">15+</b>
+                    <h1 className="uppercase text-base sm:text-lg md:text-xl">
+                        TECHNOLOGIES
+                    </h1>
+                </div>
+                <div className="relative overflow-hidden size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
+                    <b className="hover:text-[4vw]">2.5K+</b>
+                    <h1 className="uppercase text-base sm:text-lg md:text-xl">
+                        LINKEDIN FAMILY
+                    </h1>
+                </div>
+                <div className="relative overflow-hidden  size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
+                    <b className="hover:text-[4vw]">1.2+</b>
+                    <h1 className="uppercase text-base sm:text-lg md:text-xl">
+                        years of experience
+                    </h1>
+                </div>
+
+                {/* TWO LINKS */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 w-full sm:w-5/6 py-4 sm:py-5 md:py-6 px6 sm:px-9 md-px-12">
+                    <a
+                        className="relative overflow-hidden w-full min-h-36 sm:min-h-44 p-4 sm:p-6 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105a gap-2 "
+                        href="/about"
+                    >
+                        <h2 className=" font-bold text-lg sm:text-3xl uppercase flex items-center">
+                            A Little on me
+                        </h2>
+                        <h2 className="font-bold text-2xl sm:text-5xl uppercase heading-color  text-green-400 flex items-center">
+                            Bio
+                        </h2>
+                    </a>
+                    <a
+                        className="relative overflow-hidden w-full min-h-36 sm:min-h-44 p-4 sm:p-6 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105a gap-2 "
+                        href="/about"
+                    >
+                        <h2 className=" font-bold text-lg sm:text-3xl uppercase flex items-center">
+                            SEE MY PROJECT
+                        </h2>
+                        <h2 className="font-bold text-3xl sm:text-5xl uppercase text-green-400 flex items-center">
+                            HIRE ME
+                        </h2>
+                    </a>
+                </div>
+            </div>
+            {/*skeill bar*/}
+            <div className="skill-bar w-full h-fit flex flex-wrap justify-evenly py-4 sm:py-5 md:py-6 px-6 md:px-12 sm:px-9">
+                <div className="w-full flex justify-center mb-6">
+                    <h2 className="text-3xl sm:text-5xl border-b border-black dark:border-white px-2 text-green-400 font-bold mb-6">
+                        My Skills
+                    </h2>
+                </div>
+                {/* Skill Items */}
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+ to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>Java</span>
+                            <span>75%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-7/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden"
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>Javascript</span>
+                            <span>65%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-6/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div
+                                className="h-full w-[65%]
+         from-customeGreen-500 to-customeGreen-600
+        animate-progress"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden"
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>react.js</span>
+                            <span>85%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-8/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div
+                                className="h-full w-[85%]
+         from-customeGreen-500 to-customeGreen-600
+        animate-progress"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+   to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-7/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>Express.js</span>
+                            <span>70%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-7/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>MongoDB</span>
+                            <span>80%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-8/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+b to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>MySQL</span>
+                            <span>85%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-8/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>Redux</span>
+                            <span>75%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-7/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>HTML</span>
+                            <span>98%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-11/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>EJS</span>
+                            <span>75%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-7/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>Vanilla css</span>
+                            <span>85%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-9/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>Bootstrap</span>
+                            <span>90%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-10/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>tailwind css</span>
+                            <span>95%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-11/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="relative w-full sm:w-5/6 px-5 py-6
+ to-customelight-500 dark:to-customeDark-500
+from-customelight-688 dark:from-customeDark-600
+rounded-3xl border border-black/40 dark:border-white/40
+shadow-md shadow-black/50 overflow-hidden "
+                >
+                    {/* glow */}
+                    <div
+                        className="absolute top-0 right-0 h-20 w-20 blur-3xl
+   to-customeGreen-500 from-customeGreen-600"
+                    ></div>
+
+                    {/* content */}
+                    <div className="relative z-10 flex flex-col gap-4">
+                        {/* title */}
+                        <div className="flex justify-between text-lg font-semibold">
+                            <span>Git/Github</span>
+                            <span>75%</span>
+                        </div>
+
+                        {/* progress bar */}
+                        <div className="w-9/12 h-2 bg-green-500 rounded-full overflow-hidden">
+                            <div className="h-full w-{75%} from-customeGreen-500 to-customeGreen-600 animate-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                  <div className="w-full flex justify-center mb-6">
+                    <h2 className="text-3xl sm:text-5xl border-b border-black dark:border-white px-2 text-green-400 font-bold mb-6">
+                        Contact us
+                
+                    </h2>
+                </div>
+                <div>
+                    <h1>
+                        Get in Touch
+                    </h1>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
         </div>
-        {/* RIGHT SIDE IMAGE */}
-        <div className="flex justify-around items-center relative">
-          <div className=" absolute w-78 h-78 rounded-full animate-spin  border-4 border-b-white opacity-20"></div>
-          <div className="absolute w-72 h-72 rounded-full animate-pulse border-b-white opacity-10"></div>
-
-          <img
-            src="/vicky.jpeg"
-            alt="profile"
-            className=" w-70 h-70 object-cover  rounded-full  relative z-10"
-          />
-        </div>
-      </div>
-
-      <div className="max-w-full overflow-auto flex justify-center">
-        <h3 className="text-8xl width-full text-nowrap">
-          Crafting seamless digital experiences through innovative web
-          solutions.
-        </h3>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Home;
