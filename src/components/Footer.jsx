@@ -39,7 +39,7 @@ const Footer = () => {
                             <Link to="/contact">Contact</Link>
                         </li>
                         <li>
-                            <Link to="/services">Services</Link>
+                            <Link to="/Projects">Projects</Link>
                         </li>
                     </ul>
                 </div>
@@ -47,16 +47,24 @@ const Footer = () => {
                     <h4 className="font-semibold text-xl mb-4">Links</h4>
                     <ul>
                         <li>
-                            <Link to="/">LinkedIn</Link>
+                            <Link to="https://www.linkedin.com/in/vickyraj15/">
+                                LinkedIn
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/">GitHub</Link>
+                            <Link to="https://github.com/vickyraj15">
+                                GitHub
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/">Twitter</Link>
+                            <Link to="https://www.instagram.com/vickyraj9700/">
+                                Instagram
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/">Facebook</Link>
+                            <Link to="https://www.facebook.com/xtylist.vicky.badashah/">
+                                Facebook
+                            </Link>
                         </li>
                     </ul>
                 </div>

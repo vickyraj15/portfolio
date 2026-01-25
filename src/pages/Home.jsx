@@ -4,13 +4,15 @@ import ContactForm from "../components/ContactForm";
 const Home = () => {
     return (
         <div className="w-full min-h-screen flex flex-col items-center px-10 py-20">
-            <button
-                className="fixed left-2 top-3/4 -translate-y-1/2 bg-green-500 text-black  px-3 pt-2 pb-5
+            <a href="./VICKYRESUME26.pdf">
+                <button
+                    className="fixed  left-2 top-3/4 -translate-y-1/2 bg-green-500 text-black  px-3 pt-2 pb-5
           rounded-full rounded-tr-full rotate-90 origin-left cursor-pointer hover:bg-purple-600 z-50 font-semibold"
-            >
-                Download Resume
-            </button>
-            <div className="w-full flex justify-around">
+                >
+                    Download Resume
+                </button>
+            </a>
+            <div className=" pt-12 w-full flex justify-around">
                 {/* LEFT SIDE TEXT */}
                 <div className="flex flex-col justify-center gap-0">
                     <p className="text-4xl mb-2">
@@ -38,30 +40,28 @@ const Home = () => {
                 {/* RIGHT SIDE IMAGE */}
                 <div className="flex justify-center items-center relative">
                     {/* Outer rotating ring */}
+
+                    {/* TOP border */}
                     <div
                         className="absolute w-[220px] h-[220px] rounded-full
-    border-4 border-transparent border-t-white border-r-white
+    border-4 border-transparent border-t-white border-b-white
     opacity-40 animate-spin-slow"
                     ></div>
 
                     {/* Middle pulse ring */}
                     <div
-                        className="absolute w-[280px] h-[280px] rounded-full
-    border-2 border-white opacity-10 animate-pulse"
+                        className="absolute w-[250px] h-[250px] rounded-full
+    border-2 border-white opacity-10  animate-pulse"
                     ></div>
 
                     {/* Glow ring */}
-                    <div
-                        className="absolute w-240px h-240px rounded-full
-    blur-2xl bg-white/10 animate-glow"
-                    ></div>
 
                     {/* Profile Image with floating animation */}
                     <img
-                        src="/vicky.jpeg"
+                        src="/vicky.png"
                         alt="profile"
-                        className="w-[200px] h-[200px] object-cover rounded-full
-    relative z-10 animate-float shadow-xl"
+                        className=" flex-col items-end object-cover rounded-full
+    relative z-10  shadow-xl w-60 h-60 sm:w-60 sm:h-60  "
                     />
                 </div>
             </div>
@@ -80,11 +80,12 @@ const Home = () => {
                     <h1 className="uppercase text-base sm:text-lg md:text-xl">
                         succesfully completed project
                     </h1>
+                    "
                 </div>
                 <div className="relative overflow-hidden size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
-                    <b className="hover:text-[4vw]">15+</b>
+                    <b className="hover:text-[4vw]">2.5K+</b>
                     <h1 className="uppercase text-base sm:text-lg md:text-xl">
-                        TECHNOLOGIES
+                        satisfied clients
                     </h1>
                 </div>
                 <div className="relative overflow-hidden size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
@@ -444,7 +445,7 @@ shadow-md shadow-black/50 overflow-hidden "
                     className="relative w-full sm:w-5/6 px-5 py-6
 to-customelight-500 dark:to-customeDark-500
 from-customelight-688 dark:from-customeDark-600
-rounded-3xl border border-black/40 dark:border-white/40
+rounded-3xl border border-enblack/40 dark:border-white/40
 shadow-md shadow-black/50 overflow-hidden "
                 >
                     {/* glow */}
@@ -522,12 +523,8 @@ shadow-md shadow-black/50 overflow-hidden "
                     </div>
                 </div>
             </div>
+
             <div>
-                <div className="w-full flex justify-center mb-6">
-                    <h2 className="text-3xl sm:text-5xl border-b border-black dark:border-white px-2 text-green-400 font-bold mb-6">
-                        Contact us
-                    </h2>
-                </div>
                 <ContactForm />
             </div>
         </div>

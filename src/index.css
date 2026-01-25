@@ -82,8 +82,8 @@
     gap: 10px;
     border: #dadada 1px solid;
     border-radius: 15px;
-    background-color: #fff;
-    color: #002041;
+    background-color: oklch(100% 0.00011 271.152);
+    color: #696f75;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
 }
