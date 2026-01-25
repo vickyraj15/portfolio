@@ -1,4 +1,22 @@
 import React from "react";
+import { CiInstagram, CiSaveDown2 } from "react-icons/ci";
+import {
+    FaC,
+    FaCopy,
+    FaCss3,
+    FaDatabase,
+    FaGithub,
+    FaHtml5,
+    FaJava,
+    FaJs,
+    FaNode,
+    FaNodeJs,
+    FaPython,
+    FaReact,
+} from "react-icons/fa6";
+import { ImInstagram } from "react-icons/im";
+import { LiaLinkedinIn } from "react-icons/lia";
+import { Link } from "react-router";
 
 const About = () => {
     return (
@@ -35,83 +53,61 @@ shadow-md shadow-black/50 overflow-hidden "
                         className="w-[100px] bg-gray-500 h-[100px] relative by-5 rounded-2xl  shadow-xl"
                     />
                 </p>
-                <div className="grid grid-cols-3 grid-rows-1 gap-4 my-8 ">
-                    {/* Left side - 2 cards */}
-                    <div className="md:col-span-2  grid grid-cols-1 gap-6">
-                        {/* Card 1 */}
-                        <div className="rounded-2xl flex flex-col justify-center items-center border border-white/10    bg-black/30 p-6 shadow-lg">
-                            <h3 className="text-2xl font-bold uppercase">
-                                Do you want to start a project together?
-                            </h3>
 
-                            <button className="mt-4 flex items-center gap-2 px-4 py-2 border rounded-lg hover:bg-white/10">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/512/1621/1621635.png"
-                                    alt="Copy"
-                                    className="w-6 h-6 bg--black"
-                                />
-                                Copy my Email
-                            </button>
-                        </div>
+                <div className="grid gap-4 md:grid-cols-2 mt-5">
+                    <div className="flex items-center border border-white/15 bg-black/30 rounded-lg p-3 flex-col justify-center h-36">
+                        <h3 className="text-2xl font-bold uppercase text-center">
+                            Do you want to start a project together?
+                        </h3>
 
-                        {/* Card 2 */}
-                        <div className="rounded-2xl   py-12 flex flex-col items-center  border border-white/10 bg-black/30 p-6 shadow-lg">
-                            <h3 className="text-4xl  font-bold uppercase ">
-                                Let’s connect with me
-                            </h3>
-                            <div className="flex justify-center pt-5  items-center gap-4 text-2xl ">
-                                <span className="cursor-pointer border border-white bg-black p-1 shadow-2xs">
-                                    <a href="https://www.linkedin.com/in/vickyraj15/">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                                            alt="LinkedIn"
-                                            className="w-6 bg-white"
-                                        />
-                                    </a>
-                                </span>
-                                <span className="cursor-pointer border border-white bg-black p-1 shadow-2xs">
-                                    <a href="https://github.com/vickyraj15">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                            alt="GitHub"
-                                            className="w-6  bg-amber-50"
-                                        />
-                                    </a>
-                                </span>
-                                <span className="cursor-pointer border border-white bg-black p-1 shadow-2xs">
-                                    <a href="https://www.instagram.com/vickyraj9700/">
-                                        <img
-                                            src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg"
-                                            alt="Instagram"
-                                            className="w-6  bg-pink-400"
-                                        />
-                                    </a>
-                                </span>
-                            </div>
+                        <button className="mt-4 cursor-pointer flex items-center gap-2 px-4 py-2 border rounded-lg hover:bg-white/10 w-fit active:scale-90 transition-all duration-150">
+                            <FaCopy />
+                            Copy my Email
+                        </button>
+                    </div>
+                    <Link
+                        to="/about#resume"
+                        className="flex items-center border border-white/15 bg-black/30 rounded-lg p-3 flex-col justify-center md:row-span-2"
+                    >
+                        <p className="uppercase text-shadow-lg  sm:text-2xl font-bold text-emerald-50">
+                            See my Resume
+                        </p>
+                        <h1 className="text-lg sm:text-3xl uppercase text-green-500 font-extrabold mt-4">
+                            hire me
+                        </h1>
+                    </Link>
+                    <div className="flex items-center border border-white/15 bg-black/30 rounded-lg p-3 flex-col justify-center h-36">
+                        <h3 className="text-2xl font-bold uppercase text-center">
+                            Let’s connect with me
+                        </h3>
+                        <div className="flex justify-center pt-5  items-center gap-4 text-2xl ">
+                            <span className="cursor-pointer border border-white p-2 shadow-2xs rounded-lg hover:scale-90 transition-all duration-150">
+                                <a href="https://www.linkedin.com/in/vickyraj15/">
+                                    <LiaLinkedinIn />
+                                </a>
+                            </span>
+                            <span className="cursor-pointer border border-white p-2 shadow-2xs rounded-lg hover:scale-90 transition-all duration-150">
+                                <a href="https://github.com/vickyraj15">
+                                    <FaGithub />
+                                </a>
+                            </span>
+                            <span className="cursor-pointer border border-white p-2 shadow-2xs rounded-lg hover:scale-90 transition-all duration-150">
+                                <a href="https://www.instagram.com/vickyraj9700/">
+                                    <CiInstagram />
+                                </a>
+                            </span>
                         </div>
                     </div>
-
-                    {/* Right side - big card */}
-                    <div className="rounded-2xl border border-white/10 bg-black/30 p-6 shadow-lg flex flex-col justify-center items-center">
-                        <a href="/VICKYRESUME26.pdf">
-                            <p className="uppercase text-shadow-lg  sm:text-2xl font-bold text-emerald-50">
-                                See my Resume
-                            </p>
-                            <h1 className="text-lg sm:text-3xl uppercase text-green-500 font-extrabold mt-4">
-                                hire me
-                            </h1>
-                        </a>
-                    </div>
-
-                    <h1 className="text-lg sm:text-3xl uppercase font-bold mt-8">
-                        what I'm doing
-                    </h1>
                 </div>
-                <div className="  rounded-4xl  w-8/12 border border-white/15 bg-black/30 p-10 shadow-lg flex flex-col justify-center items-center mb-4">
+
+                <h1 className="text-lg sm:text-3xl uppercase font-bold mt-8 mb-4">
+                    what I'm doing
+                </h1>
+                <div className="  rounded-lg  w-8/12 border border-white/15 bg-black/30 p-10 shadow-lg flex flex-col justify-center items-center mb-4">
                     <h1 className="uppercase text-shadow-lg sm:text-2xl font-extrabold">
                         full stack web developer
                     </h1>
-                    <p className="text-gray-400 justify-center py-3">
+                    <p className="text-gray-400 justify-center py-3 text-center">
                         Experienced in building responsive and interactive web
                         applications using the MERN stack.
                     </p>
@@ -120,86 +116,51 @@ shadow-md shadow-black/50 overflow-hidden "
                     Top skills
                 </h1>
                 <div className="flex justify-center gap-4 flex-wrap mt-2 ">
-                    <span className="px-2 py-2 bg-green-500 text-black rounded-4xl">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                            alt="HTML5"
-                            className="w-4 h-4 inline-block bg-black"
-                        />
+                    <span className="px-4 py-1 bg-green-500 text-black flex items-center gap-2 rounded-full">
+                        <FaHtml5 />
                         HTML
                     </span>
-                    <span className="px py-2 bg-green-500 text-black rounded-full">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                            alt="CSS3"
-                            className="w-4 h-4 inline-block bg-black"
-                        />
+                    <span className="px-4 py-1 bg-green-500 text-black flex items-center gap-2 rounded-full">
+                        <FaCss3 />
                         CSS
                     </span>
-                    <span className="px-4 py-2 bg-green-500 text-black rounded-full">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                            className="w-4 h-4 inline-block bg-black"
-                        />
+                    <span className="px-4 py-1 bg-green-500 text-black flex items-center gap-2 rounded-full">
+                        <FaJs />
                         JavaScript
                     </span>
-                    <span className="px-4 py-2 bg-green-500 text-black rounded-full">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                            alt="HTML5"
-                            className="w-4 h-4 inline-block bg-black"
-                        />
+                    <span className="px-4 py-1 bg-green-500 text-black flex items-center gap-2 rounded-full">
+                        <FaReact />
                         React
                     </span>
-                    <span className="px-4 py-2 bg-green-500 text-black rounded-full">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                            alt="Node.js"
-                            className="w-4 h-4 inline-block bg-black"
-                        />
+                    <span className="px-4 py-1 bg-green-500 text-black flex items-center gap-2 rounded-full">
+                        <FaNodeJs />
                         Node.js
                     </span>
-                    <span className="px-4 py-2 bg-green-500 text-black rounded-full">
-                        <img
-                            src="https://www.svgrepo.com/show/354121/expressjs-icon.svg"
-                            alt="Express.js"
-                            className="w-4 h-4 inline-block bg-black"
-                        />
+                    <span className="px-4 py-1 bg-green-500 text-black flex items-center gap-2 rounded-full">
+                        <FaNode />
                         Express.js
                     </span>
-                    <span className="px-2 py-2 bg-green-500 text-black rounded-full">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                            alt="MongoDB"
-                            className="w-4 h-4 inline-block bg-black"
-                        />
+                    <span className="px-4 py-1 bg-green-500 text-black flex items-center gap-2 rounded-full">
+                        <FaDatabase />
                         MongoDB
                     </span>
-                    <span className="px-2 py-2 bg-green-500 text-black rounded-full">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                            alt="Java"
-                            className="w-4 h-4 inline-block bg-black "
-                        />
+                    <span className="px-4 py-1 bg-green-500 text-black flex items-center gap-2 rounded-full">
+                        <FaJava />
                         Java
                     </span>
-                    <span className="px-2 py-2 bg-green-500 text-black rounded-full">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                            alt="C++"
-                            className="w-4 h-4 inline-block bg-black"
-                        />
+                    <span className="px-4 py-1 bg-green-500 text-black flex items-center gap-2 rounded-full">
+                        <FaC />
                         C++
                     </span>
-                    <span className="px-4 py-2 bg-green-500 text-black rounded-full">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
-                            className="w-6  h-6 inline-block mr-2 bg-black"
-                        />
-                        Tailwind
+                    <span className="px-4 py-1 bg-green-500 text-black flex items-center gap-2 rounded-full">
+                        <FaPython />
+                        Python
                     </span>
                 </div>
-                <h1 className="text-lg sm:text-3xl uppercase font-bold mt-8">
+                <h1
+                    className="text-lg sm:text-3xl uppercase font-bold mt-8"
+                    id="resume"
+                >
                     Resume
                 </h1>
                 <iframe
@@ -210,8 +171,9 @@ shadow-md shadow-black/50 overflow-hidden "
                     <a
                         href="/VICKYRESUME26.pdf"
                         download
-                        className="inline-block mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-gray-800 items-center justify-center flex-col"
+                        className="flex flex-row gap-2 mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-gray-800 items-center justify-center"
                     >
+                        <CiSaveDown2 />
                         Download Resume
                     </a>
                 </div>

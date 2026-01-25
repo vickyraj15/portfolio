@@ -12,12 +12,12 @@ const Home = () => {
                     Download Resume
                 </button>
             </a>
-            <div className=" pt-12 w-full flex justify-around">
+            <div className=" pt-12 w-full flex justify-around flex-col gap-5 md:flex-row">
                 {/* LEFT SIDE TEXT */}
                 <div className="flex flex-col justify-center gap-0">
-                    <p className="text-4xl mb-2">
+                    <p className="text-4xl md:text-5xl font-bold mb-2">
                         Hello I'm{" "}
-                        <span className="text-green-500 font-semibold">
+                        <span className="text-green-500 font-bold">
                             Vicky Raj
                         </span>
                     </p>
@@ -38,19 +38,19 @@ const Home = () => {
                     </p>
                 </div>
                 {/* RIGHT SIDE IMAGE */}
-                <div className="flex justify-center items-center relative">
+                <div className="overflow-hidden rounded-full flex justify-center items-center relative size-60! md:size-72! md:min-w-72 lg:size-80! xl:size-96 mx-auto">
                     {/* Outer rotating ring */}
 
                     {/* TOP border */}
                     <div
-                        className="absolute w-[220px] h-[220px] rounded-full
-    border-4 border-transparent border-t-white border-b-white
-    opacity-40 animate-spin-slow"
+                        className="absolute rounded-full   h-10/12 w-10/12
+    border-2 border-transparent border-t-white border-b-white
+    opacity-40 animate-spin-slow duration-75"
                     ></div>
 
                     {/* Middle pulse ring */}
                     <div
-                        className="absolute w-[250px] h-[250px] rounded-full
+                        className="absolute flex-wrap rounded-full h-full w-full
     border-2 border-white opacity-10  animate-pulse"
                     ></div>
 
@@ -60,13 +60,13 @@ const Home = () => {
                     <img
                         src="/vicky.png"
                         alt="profile"
-                        className=" flex-col items-end object-cover rounded-full
-    relative z-10  shadow-xl w-60 h-60 sm:w-60 sm:h-60  "
+                        className=" flex-wrap  object-cover rounded-full h-full w-full mt-5
+    relative z-10  shadow-xl"
                     />
                 </div>
             </div>
 
-            <div className="w-full overflow-hidden mt-10 py-3 px-2 font-bold whitespace-nowrap">
+            <div className="w-full overflow-hidden mt-5 py-3 px-2 font-bold whitespace-nowrap">
                 <h2 className="uppercase inline-block animate-marquee text-[6vw] sm:text-[8vw]">
                     developer | MERN Stack specialist | Java | C++ | C | DSA |
                     developer | MERN Stack specialist | Java | C++ | C | DSA |
@@ -116,7 +116,7 @@ const Home = () => {
                     </a>
                     <a
                         className="relative overflow-hidden w-full min-h-36 sm:min-h-44 p-4 sm:p-6 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105a gap-2 "
-                        href="/about"
+                        href="/Projects"
                     >
                         <h2 className=" font-bold text-lg sm:text-3xl uppercase flex items-center">
                             SEE MY PROJECT
