@@ -4,7 +4,7 @@ import { LiaLinkedin } from "react-icons/lia";
 
 const ProjectCard = ({ name, img }) => {
     return (
-        <div className=" bg-blue-900 shadow-lg p-6 relative group block w-full sm:w-80 md:w-96 rounded-2xl overflow-hidden cursor-pointer ">
+        <div className=" bg-gradient-to-t from-gray-700 to-indigo-800 shadow-lg p-6 relative group block w-full sm:w-80 md:w-96 rounded-2xl overflow-hidden cursor-pointer ">
             <h3 className="text-3xl font-semibold mb-4 flex-col justify-center items-center flex">
                 {name}
             </h3>

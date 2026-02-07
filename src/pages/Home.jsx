@@ -3,7 +3,7 @@ import ContactForm from "../components/ContactForm";
 
 const Home = () => {
     return (
-        <div className="w-full min-h-screen flex flex-col items-center px-10 py-20">
+        <div className="w-full min-h-screen  flex flex-col items-center px-10 py-20">
             <a href="./VICKYRESUME26.pdf">
                 <button
                     className="fixed  left-2 top-3/4 -translate-y-1/2 bg-green-500 text-black  px-3 pt-2 pb-5
@@ -74,27 +74,26 @@ const Home = () => {
                 </h2>
             </div>
             {/*card section*/}
-            <div className="score-fm w-full h-fit flex flex-wrap justify-evenly py-4 sm:py-5 md:py-6 px-6 md:px-12">
-                <div className="relative overflow-hidden size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
+            <div className="   w-full h-fit flex flex-wrap justify-evenly py-4 sm:py-6 md:py-5 px-6 md:px-12">
+                <div className=" relative  size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl shadow-md shadow-black border dark:border-white/40 border-black/40 bg-gradient-to-t from-gray-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
                     <b className="hover:text-[4vw]">24+</b>
                     <h1 className="uppercase text-base sm:text-lg md:text-xl">
                         succesfully completed project
                     </h1>
-                    "
                 </div>
-                <div className="relative overflow-hidden size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
+                <div className=" relative  size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl shadow-md shadow-black border dark:border-white/40 border-black/40 bg-gradient-to-t from-gray-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
                     <b className="hover:text-[4vw]">2.5K+</b>
                     <h1 className="uppercase text-base sm:text-lg md:text-xl">
                         satisfied clients
                     </h1>
                 </div>
-                <div className="relative overflow-hidden size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
+                <div className=" relative  size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl shadow-md shadow-black border dark:border-white/40 border-black/40 bg-gradient-to-t from-gray-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
                     <b className="hover:text-[4vw]">2.5K+</b>
                     <h1 className="uppercase text-base sm:text-lg md:text-xl">
                         LINKEDIN FAMILY
                     </h1>
                 </div>
-                <div className="relative overflow-hidden  size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
+                <div className=" relative  size-36 sm:size-44 md:size-52 lg:size-60 m-2 sm:m-4 p-2 rounded-3xl shadow-md shadow-black border dark:border-white/40 border-black/40 bg-gradient-to-t from-gray-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105">
                     <b className="hover:text-[4vw]">1.2+</b>
                     <h1 className="uppercase text-base sm:text-lg md:text-xl">
                         years of experience
@@ -102,31 +101,30 @@ const Home = () => {
                 </div>
 
                 {/* TWO LINKS */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 w-full sm:w-5/6 py-4 sm:py-5 md:py-6 px6 sm:px-9 md-px-12">
-                    <a
-                        className="relative overflow-hidden w-full min-h-36 sm:min-h-44 p-4 sm:p-6 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105a gap-2 "
-                        href="/about"
-                    >
-                        <h2 className=" font-bold text-lg sm:text-3xl uppercase flex items-center">
-                            A Little on me
-                        </h2>
-                        <h2 className="font-bold text-2xl sm:text-5xl uppercase heading-color  text-green-400 flex items-center">
-                            Bio
-                        </h2>
-                    </a>
-                    <a
-                        className="relative overflow-hidden w-full min-h-36 sm:min-h-44 p-4 sm:p-6 rounded-3xl border dark:border-white/40 border-black/40 shadow-md shadow-black/50 bg-gradient-to-t from-purple-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105a gap-2 "
-                        href="/Projects"
-                    >
-                        <h2 className=" font-bold text-lg sm:text-3xl uppercase flex items-center">
-                            SEE MY PROJECT
-                        </h2>
-                        <h2 className="font-bold text-3xl sm:text-5xl uppercase text-green-400 flex items-center">
-                            HIRE ME
-                        </h2>
-                    </a>
+                <div className=" grid  md:grid-cols-2 gap-8 my-4 w--full sm:w-5/6  py-4 sm:py-5 md:py-6 px-6 sm:px-9 md-px-12">
+                    <div className=" relative overflow-hidden p-4 sm:-p-6 w-full min-h-40 sm:h-40  rounded-3xl shadow-md shadow-black border dark:border-white/40 border-black/40 bg-gradient-to-t from-gray-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105a gap-2 ">
+                        <a href="/About">
+                            <h2 className=" font-bold text-lg sm:text-3xl uppercase flex text-center">
+                                A Little on me
+                            </h2>
+                            <h2 className="uppercase font-bold text-5xl sm:text-4xl text-green-500 ">
+                                Bio
+                            </h2>
+                        </a>
+                    </div>
+                    <div className=" relative overflow-hidden p-4 sm:p-6 w-full min:h-40 sm-h-40 rounded-3xl shadow-md shadow-black border dark:border-white/40 border-black/40 bg-gradient-to-t from-gray-700 to-indigo-800 flex items-center text-center justify-center flex-col hover:scale-105a gap-2 ">
+                        <a href="/Projects">
+                            <h2 className="  font-bold text-lg sm:text-3xl uppercase flex text-center">
+                                SEE MY PROJECT
+                            </h2>
+                            <h2 className="font-bold text-3xl sm:text-4xl uppercase text-green-400">
+                                HIRE ME
+                            </h2>
+                        </a>
+                    </div>
                 </div>
             </div>
+
             {/*skeill bar*/}
             <div className="skill-bar w-full h-fit flex flex-wrap justify-evenly py-4 sm:py-5 md:py-6 px-6 md:px-12 sm:px-9">
                 <div className="w-full flex justify-center mb-6">
